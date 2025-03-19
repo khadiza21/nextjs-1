@@ -36,3 +36,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
+<!-- 
+if need any use any variable both server and client side then need to add "NEXT_PUBLIC_" this before variable name in .env.local . 
+NEXT_PUBLIC_API_URL=https:// 
+ -->
+
+ <!-- vercel deploy
+ 
+ 1. vercel --version
+ 2. vercel --prod
+ Y
+N
+./
+N
+  -->

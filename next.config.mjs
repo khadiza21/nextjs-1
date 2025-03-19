@@ -1,3 +1,4 @@
+// https://nextjs.org/docs/app/building-your-application/routing/redirecting
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
@@ -7,6 +8,22 @@ const nextConfig = {
             hostname: 'www.themealdb.com',
           },
         ],
+      },
+      async redirects() {
+        return [
+          // Basic redirect
+          {
+            source: '/products/add',
+            destination: '/dashboard/products/add',
+            permanent: true,
+          },
+          // Wildcard path matching
+          // {
+          //   source: '/blog/:slug',
+          //   destination: '/news/:slug',
+          //   permanent: true,
+          // },
+        ]
       },
 };
 
